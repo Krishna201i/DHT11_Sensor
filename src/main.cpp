@@ -13,7 +13,7 @@ void loop() {
     float temperature = dht.readTemperature();
     if (isnan(humidity) || isnan(temperature)) {
         Serial.println("Failed to read from DHT sensor!");
-        delay(2000);
+        delay(1000);
         return;
     }
     Serial.print("Humidity: ");
@@ -22,5 +22,5 @@ void loop() {
     Serial.print("Temperature: ");
     Serial.print(temperature);
     Serial.println(" *C");
-    delay(2000);
+    delay(1000);
 }
